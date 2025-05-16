@@ -1,0 +1,48 @@
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Name: Map
+      Class: rviz_default_plugins/Map
+      Enabled: true
+      Topic: /map
+      Alpha: 0.7
+    - Name: TF
+      Class: rviz_default_plugins/TF
+      Enabled: true
+    - Name: PointCloud2
+      Class: rviz_default_plugins/PointCloud2
+      Enabled: true
+      Topic: /Spot/Velodyne_Puck/point_cloud
+      Queue Size: 10
+      Color Transformer: Intensity
+      Style: Points
+      Size (Pixels): 2
+    - Name: Odometry
+      Class: rviz_default_plugins/Odometry
+      Enabled: true
+      Topic: /Spot/odometry
+      Color: 255; 0; 0
+      Shaft Length: 0.1
+      Shaft Radius: 0.02
+      Head Length: 0.1
+      Head Radius: 0.03
+    - Name: RobotModel
+      Class: rviz_default_plugins/RobotModel
+      Enabled: true
+      Robot Description: robot_description
+  Enabled: true
+  Fixed Frame: map
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+    - Class: rviz_default_plugins/SetInitialPose
+    - Class: rviz_default_plugins/SetGoal
+  Value: true
+  global_options:
+    Background Color: 48; 48; 48
+    Fixed Frame: map
+    Frame Rate: 30

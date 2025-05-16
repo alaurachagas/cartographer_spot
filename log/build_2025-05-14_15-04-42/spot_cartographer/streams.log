@@ -1,0 +1,27 @@
+[0.034s] Invoking command in '/home/hiwi/devel_ana/carto_ws/build/spot_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hiwi/ws_moveit2/install/moveit_configs_utils:/home/hiwi/devel_ana/ros2_ws/install/talk_listen:/home/hiwi/devel_ana/ros2_ws/install/mqtt_test:/opt/ros/humble /usr/bin/cmake --build /home/hiwi/devel_ana/carto_ws/build/spot_cartographer -- -j8 -l8
+[0.129s] Invoked command in '/home/hiwi/devel_ana/carto_ws/build/spot_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hiwi/ws_moveit2/install/moveit_configs_utils:/home/hiwi/devel_ana/ros2_ws/install/talk_listen:/home/hiwi/devel_ana/ros2_ws/install/mqtt_test:/opt/ros/humble /usr/bin/cmake --build /home/hiwi/devel_ana/carto_ws/build/spot_cartographer -- -j8 -l8
+[0.154s] Invoking command in '/home/hiwi/devel_ana/carto_ws/build/spot_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hiwi/ws_moveit2/install/moveit_configs_utils:/home/hiwi/devel_ana/ros2_ws/install/talk_listen:/home/hiwi/devel_ana/ros2_ws/install/mqtt_test:/opt/ros/humble /usr/bin/cmake --install /home/hiwi/devel_ana/carto_ws/build/spot_cartographer
+[0.174s] -- Install configuration: ""
+[0.175s] -- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/config
+[0.175s] -- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/config/spot_cartographer.rviz
+[0.175s] -- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/config/spot_cartographer.lua
+[0.176s] -- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/config/spot_3d.lua
+[0.176s] -- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/launch
+[0.176s] -- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/launch/spot_3d.launch.py
+[0.177s] -- Installing: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/launch/cartographer_spot.launch.py
+[0.178s] -- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/ament_index/resource_index/package_run_dependencies/spot_cartographer
+[0.179s] -- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/ament_index/resource_index/parent_prefix_path/spot_cartographer
+[0.179s] -- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/environment/ament_prefix_path.sh
+[0.179s] -- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/environment/ament_prefix_path.dsv
+[0.179s] -- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/environment/path.sh
+[0.180s] -- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/environment/path.dsv
+[0.180s] -- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/local_setup.bash
+[0.180s] -- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/local_setup.sh
+[0.181s] -- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/local_setup.zsh
+[0.181s] -- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/local_setup.dsv
+[0.181s] -- Installing: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/package.dsv
+[0.181s] -- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/ament_index/resource_index/packages/spot_cartographer
+[0.182s] -- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/cmake/spot_cartographerConfig.cmake
+[0.183s] -- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/cmake/spot_cartographerConfig-version.cmake
+[0.183s] -- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/package.xml
+[0.185s] Invoked command in '/home/hiwi/devel_ana/carto_ws/build/spot_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hiwi/ws_moveit2/install/moveit_configs_utils:/home/hiwi/devel_ana/ros2_ws/install/talk_listen:/home/hiwi/devel_ana/ros2_ws/install/mqtt_test:/opt/ros/humble /usr/bin/cmake --install /home/hiwi/devel_ana/carto_ws/build/spot_cartographer

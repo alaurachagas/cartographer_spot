@@ -1,0 +1,24 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/hiwi/devel_ana/carto_ws/build/spot_cartographer
+-- Install configuration: ""
+-- Installing: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/config
+-- Installing: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/config/spot_3d.lua
+-- Installing: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/launch
+-- Installing: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/launch/spot_3d.launch.py
+-- Installing: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/ament_index/resource_index/package_run_dependencies/spot_cartographer
+-- Installing: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/ament_index/resource_index/parent_prefix_path/spot_cartographer
+-- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/environment/ament_prefix_path.sh
+-- Installing: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/environment/path.sh
+-- Installing: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/environment/path.dsv
+-- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/local_setup.bash
+-- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/local_setup.sh
+-- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/local_setup.zsh
+-- Installing: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/local_setup.dsv
+-- Installing: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/package.dsv
+-- Up-to-date: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/ament_index/resource_index/packages/spot_cartographer
+-- Installing: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/cmake/spot_cartographerConfig.cmake
+-- Installing: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/cmake/spot_cartographerConfig-version.cmake
+-- Installing: /home/hiwi/devel_ana/carto_ws/install/spot_cartographer/share/spot_cartographer/package.xml
