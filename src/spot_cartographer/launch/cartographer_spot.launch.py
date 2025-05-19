@@ -20,7 +20,7 @@ def generate_launch_description():
             ('odom', '/Spot/odometry'),
         ]   
 
-    ),
+    )
 
     # Cartographer Occupancy Grid Node
     cartographer_occupancy_grid_node = Node(
@@ -31,7 +31,7 @@ def generate_launch_description():
             {'use_sim_time': True},
             {'resolution': 0.05},
         ]
-    ),
+    )
 
     # RViz Node
     rviz_node = Node(
