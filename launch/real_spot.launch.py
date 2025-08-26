@@ -18,6 +18,7 @@ def generate_launch_description():
         ],
         remappings=[
             ('points2', '/velodyne_points'),
+            ('odom', '/odometry'),
             #('imu', '/Spot/imu'),
             #('odom', '/Spot/odometry'),
         ]   
@@ -36,19 +37,19 @@ def generate_launch_description():
     )
 
     # RViz Node
-    rviz_node = Node(
-        package='rviz2',
-        executable='rviz2',
-        name='rviz2',
-        arguments=['-d', '/home/spot/devel_ana/cartographer_spot/src/spot_cartographer/config/spot_cartographer.rviz'],
-        parameters=[{
-            'use_sim_time': False,
-        }]
-    )
+    # rviz_node = Node(
+    #     package='rviz2',
+    #     executable='rviz2',
+    #     name='rviz2',
+    #     arguments=['-d', '/home/spot/devel_ana/cartographer_spot/src/spot_cartographer/config/spot_cartographer.rviz'],
+    #     parameters=[{
+    #         'use_sim_time': False,
+    #     }]
+    # )
     return LaunchDescription([
         # Launch the nodes
         cartographer_node,
         cartographer_occupancy_grid_node,
-        rviz_node,
+        # rviz_node,
 
     ])

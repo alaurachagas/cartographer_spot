@@ -6,12 +6,12 @@ options = {
   trajectory_builder = TRAJECTORY_BUILDER,
   map_frame = "map",
   tracking_frame = "body",    -- Spot IMU frame name from TF
-  published_frame = "body",       -- Spot's body frame
+  published_frame = "odom",       -- Spot's body frame
   odom_frame = "odom",
-  provide_odom_frame = true,          -- Spot already publishes odom
+  provide_odom_frame = false,          -- Spot already publishes odom
   publish_frame_projected_to_2d = true,
   use_pose_extrapolator = true,
-  use_odometry = false,                 -- Spot odometry is very reliable
+  use_odometry = true,                 -- Spot odometry is very reliable
   use_nav_sat = false,
   use_landmarks = false,
   num_laser_scans = 0,
@@ -33,13 +33,16 @@ MAP_BUILDER.use_trajectory_builder_2d = true
 
 -- Velodyne VLP-16 tuning
 TRAJECTORY_BUILDER_2D.num_accumulated_range_data = 2   -- aggregate 2 sweeps
-TRAJECTORY_BUILDER_2D.min_range = 0.5                  -- VLP-16 spec
+TRAJECTORY_BUILDER_2D.min_range = 0.3                  -- VLP-16 spec
 TRAJECTORY_BUILDER_2D.max_range = 100.0                -- VLP-16 max range
-TRAJECTORY_BUILDER_2D.min_z = -0.3                     -- filter ground hits
-TRAJECTORY_BUILDER_2D.max_z = 1.0                      -- filter high returns
+TRAJECTORY_BUILDER_2D.min_z = -0.2                    -- filter ground hits
+TRAJECTORY_BUILDER_2D.max_z = 0.8                    -- filter high returns
 TRAJECTORY_BUILDER_2D.use_imu_data = false
 TRAJECTORY_BUILDER_2D.submaps.num_range_data = 90       -- bigger submaps for less noise
 TRAJECTORY_BUILDER_2D.use_online_correlative_scan_matching = true
+
+TRAJECTORY_BUILDER_2D.max_range = 8.0        -- <— drop hits beyond this
+TRAJECTORY_BUILDER_2D.missing_data_ray_length = 8.0  -- <— don't carve free space past this
 
 -- Pose graph tuning for Spot
 POSE_GRAPH.optimize_every_n_nodes = 90                  -- less frequent optimization
