@@ -18,20 +18,20 @@ def generate_launch_description():
             '-load_frozen_state', 'true'
         ],
         remappings=[
-            ('points2', '/velodyne_points'),
+            ('points2', '/velodyne_points_decoded'),
             ('odom',    '/odometry'),       # your Spot odom topic
         ],
         parameters=[{'use_sim_time': False}],
         output='screen',
     )
 
-    # cartographer_occupancy_grid_node = Node(
-    #     package = 'cartographer_ros',
-    #     executable = 'cartographer_occupancy_grid_node',
-    #     parameters = [
-    #         {'resolution': 0.05},
-    #         {'use_sim_time': False}
-    #         ],
-    #     )
+    cartographer_occupancy_grid_node = Node(
+        package = 'cartographer_ros',
+        executable = 'cartographer_occupancy_grid_node',
+        parameters = [
+            {'resolution': 0.05},
+            {'use_sim_time': False}
+            ],
+        )
 
     return LaunchDescription([carto, cartographer_occupancy_grid_node])
