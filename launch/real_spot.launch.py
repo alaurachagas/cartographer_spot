@@ -17,12 +17,10 @@ def generate_launch_description():
             '-configuration_basename', 'real_spot.lua',
         ],
         remappings=[
-            ('points2', '/velodyne_points'),
-            ('odom', '/odometry'),
+            ('points2', '/velodyne_points_cartographer'),
             #('imu', '/Spot/imu'),
             #('odom', '/Spot/odometry'),
         ]   
-
     )
 
     # Cartographer Occupancy Grid Node
@@ -35,6 +33,16 @@ def generate_launch_description():
             {'resolution': 0.05},
         ]
     )
+
+    # pc2_time_normalizer = Node(
+    #     package='cartographer_ros',
+    #     executable='pc2_time_normalizer',
+    #     name='pc2_time_normalizer',
+    #     parameters=[{
+    #         'input':  '/velodyne_points_decoded',      # from point_cloud_transport
+    #         'output': '/velodyne_points_cartographer'  # to Cartographer
+    #     }]
+    # )
 
     # RViz Node
     # rviz_node = Node(
@@ -50,6 +58,7 @@ def generate_launch_description():
         # Launch the nodes
         cartographer_node,
         cartographer_occupancy_grid_node,
+        # pc2_time_normalizer,
         # rviz_node,
 
     ])
