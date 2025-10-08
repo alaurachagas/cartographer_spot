@@ -18,7 +18,7 @@ def generate_launch_description():
             '-load_frozen_state', 'true'
         ],
         remappings=[
-            ('points2', '/velodyne_points_decoded'),
+            ('points2', '/velodyne_points_cartographer'),
             ('odom',    '/odometry'),       # your Spot odom topic
         ],
         parameters=[{'use_sim_time': False}],
