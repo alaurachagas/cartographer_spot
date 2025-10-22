@@ -69,7 +69,7 @@ POSE_GRAPH.constraint_builder.min_score = 0.7
 
 -- Keep only a small sliding window of submaps for localization
 TRAJECTORY_BUILDER.pure_localization_trimmer = {
-  max_submaps_to_keep = 4,
+  max_submaps_to_keep = 3,
 }
 
 return options

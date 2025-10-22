@@ -14,7 +14,7 @@ def generate_launch_description():
         arguments=[
             '-configuration_directory', cfg_dir,
             '-configuration_basename', lua_basename,
-            '-load_state_filename', '/map/spot_halle.pbstream',
+            '-load_state_filename', '/map/halle_22_oct.pbstream',
             '-load_frozen_state', 'true'
         ],
         remappings=[
