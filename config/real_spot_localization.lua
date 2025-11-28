@@ -9,7 +9,7 @@ options = {
   map_frame = "map",
   tracking_frame = "body",
   published_frame = "odom",
-  odom_frame = "odom",
+  odom_frame = "body",
   provide_odom_frame = false,             -- Cartographer publishes map->odom; Spot publishes odom->body
   publish_frame_projected_to_2d = true,
   use_pose_extrapolator = true,
@@ -64,10 +64,11 @@ TRAJECTORY_BUILDER_2D.submaps.num_range_data = 90
 
 -- Pose graph: disable global loop closures/optimization for pure localization
 POSE_GRAPH.optimize_every_n_nodes = 0        -- no global optimization passes
-POSE_GRAPH.global_sampling_ratio = 0.0       -- don’t even sample for loop closures
+POSE_GRAPH.global_sampling_ratio = 1.0       -- don’t even sample for loop closures
 POSE_GRAPH.constraint_builder.min_score = 0.7
 
 -- Keep only a small sliding window of submaps for localization
+-- TRAJECTORY_BUILDER.pure_localization = true
 TRAJECTORY_BUILDER.pure_localization_trimmer = {
   max_submaps_to_keep = 3,
 }

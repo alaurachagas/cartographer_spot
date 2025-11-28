@@ -14,7 +14,7 @@ def generate_launch_description():
         arguments=[
             '-configuration_directory', cfg_dir,
             '-configuration_basename', lua_basename,
-            '-load_state_filename', '/map/halle_22_oct.pbstream',
+            '-load_state_filename', '/map/validation_map.pbstream',
             '-load_frozen_state', 'true'
         ],
         remappings=[
@@ -34,4 +34,7 @@ def generate_launch_description():
             ],
         )
 
-    return LaunchDescription([carto, cartographer_occupancy_grid_node])
+    return LaunchDescription([
+        carto, 
+        cartographer_occupancy_grid_node
+    ])
